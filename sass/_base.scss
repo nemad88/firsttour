@@ -1,0 +1,49 @@
+$color-primary-0: #EE2828;	// Main Primary color */
+$color-primary-1: #300000;
+$color-primary-2: #850000;
+$color-primary-3: #FF9595;
+$color-primary-4: #FFA1A1;
+
+$color-secondary-1-0: #EED928;	// Main Secondary color (1) */
+$color-secondary-1-1: #302B00;
+$color-secondary-1-2: #857700;
+$color-secondary-1-3: #FFF495;
+$color-secondary-1-4: #FFF5A1;
+
+$color-secondary-2-0: #3630A6;	// Main Secondary color (2) */
+$color-secondary-2-1: #050321;
+$color-secondary-2-2: #0F0A5D;
+$color-secondary-2-3: #8D89D5;
+$color-secondary-2-4: #A5A1EC;
+
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; //10px/16px = 62.5%    
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 3rem;
+    color: $color-secondary-2-1;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+.container {
+    display: grid;
+    grid-template-rows: 100vh min-content;
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+

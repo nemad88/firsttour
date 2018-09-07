@@ -1,0 +1,40 @@
+.summer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    background-color: rgba($color-secondary-1-0, .9);
+    grid-column: 1 / -1; 
+    grid-gap: 3rem;
+    padding: 9rem 3rem;  
+
+
+    &__box {        
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-color: #fff;
+        box-shadow: 2rem 1rem 1rem .5rem rgba(black, .5);      
+        // border-radius: 5rem;
+        overflow: hidden;  
+    }
+
+    .img--1 {        
+        height: 300px;
+        background-image: url("../img/summer-1.jpg");
+        background-position: center;
+        background-size: cover;
+        margin: 1rem;
+    }
+    .img--2 {
+        height: 300px;
+        background-image: url("../img/summer-2.jpg");
+        background-position: center;
+        background-size: cover;
+        margin: 1rem;
+    }
+    .img--3 {
+        height: 300px;
+        background-image: url("../img/summer-3.jpg");
+        background-position: center;
+        background-size: cover;
+        margin: 1rem;
+    }
+}
