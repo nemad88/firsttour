@@ -1,6 +1,6 @@
 .summer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));    
     background-color: rgba($color-secondary-2-1, .5);
     grid-column: 1 / -1; 
     grid-gap: 3rem;
@@ -9,11 +9,12 @@
 
     &__box {        
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr min-content 1fr;
         background-color: #fff;
         box-shadow: 2rem 1rem 1rem .5rem rgba(black, .5);      
         // border-radius: 5rem;
-        overflow: hidden;  
+        overflow: hidden;
+          
     }
 
     .img--1 {        
@@ -37,4 +38,26 @@
         background-size: cover;
         margin: 1rem;
     }
+
+    &-content {
+        padding: 10px;
+
+        .icon-small {
+            margin-right: 2rem;
+        }
+    }
+}
+
+.heading--1 {    
+    justify-self: center;
+    text-align: center;
+    padding: 0;
+    margin: 1rem;
+    line-height: 1;
+    transition: all .3s;
+
+    &:hover {
+        transform: scale(1.1) translateY(10px);
+        
+    }   
 }

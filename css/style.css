@@ -219,7 +219,7 @@ body {
   padding: 9rem 3rem; }
   .summer__box {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
     background-color: #fff;
     box-shadow: 2rem 1rem 1rem 0.5rem rgba(0, 0, 0, 0.5);
     overflow: hidden; }
@@ -241,6 +241,20 @@ body {
     background-position: center;
     background-size: cover;
     margin: 1rem; }
+  .summer-content {
+    padding: 10px; }
+    .summer-content .icon-small {
+      margin-right: 2rem; }
+
+.heading--1 {
+  justify-self: center;
+  text-align: center;
+  padding: 0;
+  margin: 1rem;
+  line-height: 1;
+  transition: all .3s; }
+  .heading--1:hover {
+    transform: scale(1.1) translateY(10px); }
 
 .winter {
   display: grid;
