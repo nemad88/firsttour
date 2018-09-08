@@ -1,12 +1,12 @@
 $(document).ready(function () {
-    
+
     $('.js--section-guides').waypoint(function (direction) {
         if (direction == "down") {
             $('.topnav').addClass('light');
         } else {
             $('.topnav').removeClass('light');
         }
-        
+
     }, {
             offset: '60px;'
         });
@@ -40,6 +40,13 @@ $(document).ready(function () {
 
     $('.js--wp-3').waypoint(function (direction) {
         $('.js--wp-3').addClass('animated fadeIn');
+    }, {
+            offset: '50%'
+        })
+
+
+    $('.js--wp-4').waypoint(function (direction) {
+        $('.js--wp-4').addClass('animated fadeIn');
     }, {
             offset: '50%'
         })
