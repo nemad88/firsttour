@@ -1,5 +1,15 @@
-$(document).ready(function(){
-
+$(document).ready(function () {
+    
+    $('.js--section-guides').waypoint(function (direction) {
+        if (direction == "down") {
+            $('.topnav').addClass('light');
+        } else {
+            $('.topnav').removeClass('light');
+        }
+        
+    }, {
+            offset: '60px;'
+        });
 
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {
@@ -16,11 +26,23 @@ $(document).ready(function(){
         });
     });
 
-
     $('.js--wp-1').waypoint(function (direction) {
         $('.js--wp-1').addClass('animated flipInY');
     }, {
             offset: '50%'
         })
+
+    $('.js--wp-2').waypoint(function (direction) {
+        $('.js--wp-2').addClass('animated fadeIn');
+    }, {
+            offset: '20%'
+        })
+
+    $('.js--wp-3').waypoint(function (direction) {
+        $('.js--wp-3').addClass('animated fadeIn');
+    }, {
+            offset: '50%'
+        })
+
 })
 

@@ -1,7 +1,7 @@
 .summer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    background-color: rgba($color-secondary-1-0, .9);
+    background-color: rgba($color-secondary-2-1, .5);
     grid-column: 1 / -1; 
     grid-gap: 3rem;
     padding: 9rem 3rem;  

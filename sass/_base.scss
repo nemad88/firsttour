@@ -47,3 +47,18 @@ body {
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
+.back-to-top {
+    display: block;
+    position: fix;
+    right: 10px;
+    width: 30px;
+}
+
+.js--wp-1, .js--wp-2, .js--wp-3 {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.animated{
+    opacity: 1!important;
+}

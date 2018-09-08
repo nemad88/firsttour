@@ -21,6 +21,19 @@ body {
   grid-template-rows: 100vh min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.back-to-top {
+  display: block;
+  position: fix;
+  right: 10px;
+  width: 30px; }
+
+.js--wp-1, .js--wp-2, .js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s; }
+
+.animated {
+  opacity: 1 !important; }
+
 .topnav {
   text-align: center;
   display: block;
@@ -56,6 +69,10 @@ body {
     padding-top: 5px;
     padding-bottom: 5px; }
 
+.light {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #050321 !important; }
+
 .destinations {
   display: grid;
   grid-column: full-start / full-end;
@@ -84,7 +101,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: rgba(15, 10, 93, 0.2); }
     .destinations--1:hover .destinations--1__content,
     .destinations--1:focus .destinations--1__content {
       transform: scale(1.2); }
@@ -128,7 +145,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: rgba(15, 10, 93, 0.2); }
     .destinations--2:hover .destinations--2__content,
     .destinations--2:focus .destinations--2__content {
       transform: scale(1.2); }
@@ -158,18 +175,21 @@ body {
     border: none;
     border-radius: 10px;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     transform: scale(0);
     transition: all .5s;
     justify-self: center;
-    width: 70%; }
+    width: minmax(200px 40%);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .guides {
   background-image: linear-gradient(rgba(255, 245, 161, 0.3), rgba(255, 245, 161, 0.3)), url("../img/summer-1.jpg");
   background-size: cover;
   background-position: center;
   grid-column: 1 / -1;
-  padding-top: 3rem; }
+  padding: 20rem 0; }
   .guides .heading-4 {
     font-size: 3rem; }
   .guides__quote {
@@ -181,23 +201,19 @@ body {
     margin: 5rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    justify-content: space-between;
+    justify-content: center;
+    justify-items: center;
     align-items: center;
-    grid-gap: 1.5rem;
     padding-right: 2rem;
     padding-left: 2rem; }
-
-.js--wp-1 {
-  opacity: 0;
-  animation-duration: 1s; }
-
-.animated {
-  opacity: 1 !important; }
+  .guides__details {
+    display: grid;
+    justify-items: center; }
 
 .summer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  background-color: rgba(238, 217, 40, 0.9);
+  background-color: rgba(5, 3, 33, 0.5);
   grid-column: 1 / -1;
   grid-gap: 3rem;
   padding: 9rem 3rem; }
@@ -259,8 +275,9 @@ body {
     margin: 1rem; }
 
 .gallery {
-  background-color: chocolate;
-  grid-column: 1 / -1; }
+  background-color: rgba(133, 0, 0, 0.7);
+  grid-column: 1 / -1;
+  height: 600px; }
 
 .footer {
   background-color: #333;

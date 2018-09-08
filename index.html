@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
 
 
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <!-- <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/queries.css"> -->
+    <link rel="stylesheet" href="vendors/css/animate.css">
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -22,15 +22,16 @@
 
 <body>
 
+    <!-- <div class="back-to-top">Top</div> -->
     <!-- NAVIGATON -->
     <div class="topnav">
         <ul class="nav">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="#guides" class="nav__link">Guides</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Summer</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Winter</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            <li class="nav__item"><a href="#summer" class="nav__link">Summer</a></li>
+            <li class="nav__item"><a href="#winter" class="nav__link">Winter</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
     </div>
 
@@ -43,20 +44,20 @@
             <div class="destinations--1">
                 <div class="destinations--1__content">
                     <h1>Best summer holiday</h1>
-                    <button class="btn btn-summer">Show me the tours</button>
+                    <a href="#summer" class="btn btn-summer">Show me the tours</a>
                 </div>
             </div>
 
             <div class="destinations--2">
                 <div class="destinations--2__content">
                     <h1>Best Ski Tours</h1>
-                    <button class="btn btn-summer">Show me the tours</button>
+                    <a href="#winter" class="btn btn-winter">Show me the tours</a>
                 </div>
             </div>
 
         </div>
         <!-- <header class="header">Header</header> -->
-        <div class="guides" id="guides">
+        <div class="guides js--section-guides" id="guides">
             <div class="guides__list js--wp-1">
                 <img src="img/guide-1.jpg" alt="Guide 1" class="guides__img">
                 <div class="guides__details">
@@ -91,45 +92,45 @@
 
             </div>
         </div>
-        <div class="summer">
-            <div class="summer__box">
+        <div class="summer" id="summer">
+            <div class="summer__box js--wp-2">
                 <div class="img--1"></div>
                 <div class="summer__text">France</div>
             </div>
 
-            <div class="summer__box">
+            <div class="summer__box js--wp-2">
                 <div class="img--2"></div>
                 <div class="summer__text">France</div>
             </div>
 
-            <div class="summer__box">
+            <div class="summer__box js--wp-2">
                 <div class="img--3"></div>
                 <div class="summer__text">France</div>
             </div>
         </div>
 
-        <div class="gallery">
+        <div class="gallery" id="gallery">
             Gallery
         </div>
 
-        <div class="winter">
-            <div class="winter__box">
+        <div class="winter" id="winter">
+            <div class="winter__box js--wp-3">
                 <div class="img--1"></div>
                 <div class="winter__text">France</div>
             </div>
 
-            <div class="winter__box">
+            <div class="winter__box js--wp-3">
                 <div class="img--2"></div>
                 <div class="winter__text">Switcherland</div>
             </div>
 
-            <div class="winter__box">
+            <div class="winter__box js--wp-3">
                 <div class="img--3"></div>
                 <div class="winter__text">Russia</div>
             </div>
         </div>
 
-        <div class="footer">
+        <div class="footer" id="contact">
             footer
         </div>
 
