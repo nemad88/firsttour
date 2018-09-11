@@ -10,10 +10,12 @@
 
     <link rel="stylesheet" href="vendors/css/normalize.css">
     <link rel="stylesheet" href="vendors/css/grid.css">
-    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
-    <!-- <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/queries.css"> -->
+    <!-- <link rel="stylesheet" href="vendors/css/ionicons.min.css"> -->
+    
     <link rel="stylesheet" href="vendors/css/animate.css">
+    <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -27,10 +29,10 @@
     <div class="topnav">
         <ul class="nav">
             <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
             <li class="nav__item"><a href="#guides" class="nav__link">Guides</a></li>
             <li class="nav__item"><a href="#summer" class="nav__link">Summer</a></li>
             <li class="nav__item"><a href="#winter" class="nav__link">Winter</a></li>
-            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
             <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
     </div>
@@ -38,122 +40,236 @@
     <!-- MAIN CONTAINER -->
     <div class="container" id="home">
 
-        <div class="destinations">
-
-
-            <div class="destinations--1">
-                <div class="destinations--1__content">
-                    <h1>Best summer holiday</h1>
-                    <a href="#summer" class="btn btn-summer">Show me the tours</a>
-                </div>
+        <header class="header">
+            <div class="header__box">
+                <h1>Best summer holidays and ski tours</h1>
+                <a href="#summer" class="btn">Show me the tours</a>
             </div>
-
-            <div class="destinations--2">
-                <div class="destinations--2__content">
-                    <h1>Best Ski Tours</h1>
-                    <a href="#winter" class="btn btn-winter">Show me the tours</a>
-                </div>
-            </div>
-
-        </div>
-        <!-- <header class="header">Header</header> -->
-        <div class="guides js--section-guides" id="guides">
-            <div class="guides__list js--wp-1">
-                <img src="img/guide-1.jpg" alt="Guide 1" class="guides__img">
-                <div class="guides__details">
-                    <h4 class="heading-4">Erika Feinman</h4>
-                    <p class="guides__quote">&ldquo;Forever summer&rdquo;</p>
-                </div>
-
-                <img src="img/guide-2.jpg" alt="Guide 2" class="guides__img">
-                <div class="guides__details">
-                    <h4 class="heading-4 heading-4--light">John Brown</h4>
-                    <p class="guides__quote">&ldquo;Just ski&rdquo;</p>
-                </div>
-
-                <img src="img/guide-3.jpg" alt="Guide 3" class="guides__img">
-                <div class="guides__details">
-                    <h4 class="heading-4 heading-4--light">Julia Ramsey</h4>
-                    <p class="guides__quote">&ldquo;Need some vitamin-sea&rdquo;</p>
-                </div>
-
-
-                <img src="img/guide-4.jpg" alt="Guide 4" class="guides__img">
-                <div class="guides__details">
-                    <h4 class="heading-4 heading-4--light">Kim Taylor</h4>
-                    <p class="guides__quote">&ldquo;I love travel&rdquo;</p>
-                </div>
-
-                <img src="img/guide-5.jpg" alt="Guide 5" class="guides__img">
-                <div class="guides__details">
-                    <h4 class="heading-4 heading-4--light">Britney Smith</h4>
-                    <p class="guides__quote">&ldquo;Nature is my life&rdquo;</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="summer" id="summer">
-            <div class="summer__box js--wp-2">
-                <div class="img--1"></div>
-                <h1 class="heading--1">France</h1>
-                <div class="summer-content">
-                    <i class="ion-ios-person icon-small"></i>2400 happy travellers
-                </div>
-            </div>
-
-            <div class="summer__box js--wp-2">
-                <div class="img--2"></div>
-                <h1 class="heading--1">Hawaii</h1>
-                <div class="summer-content">
-                    <i class="ion-ios-person icon-small"></i>1400 happy travellers
-                </div>
-            </div>
-
-            <div class="summer__box js--wp-2">
-                <div class="img--3"></div>
-                <h1 class="heading--1">Greece</h1>
-                <div class="summer-content">
-                    <i class="ion-ios-person icon-small"></i>2300 happy travellers
-                </div>
-            </div>
-        </div>
+        </header>
 
         <div class="gallery" id="gallery">
-            <figure class="gallery__item gallery__item--1 js--wp-4"><img src="img/gal-1.jpg" alt="Gallery image 1" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--2 js--wp-4"><img src="img/gal-2.jpg" alt="Gallery image 2" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--3 js--wp-4"><img src="img/gal-3.jpg" alt="Gallery image 3" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--4 js--wp-4"><img src="img/gal-4.jpg" alt="Gallery image 4" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--5 js--wp-4"><img src="img/gal-5.jpg" alt="Gallery image 5" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--6 js--wp-4"><img src="img/gal-6.jpg" alt="Gallery image 6" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--7 js--wp-4"><img src="img/gal-7.jpg" alt="Gallery image 7" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--8 js--wp-4"><img src="img/gal-8.jpg" alt="Gallery image 8" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--9 js--wp-4"><img src="img/gal-9.jpg" alt="Gallery image 9" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--10 js--wp-4"><img src="img/gal-10.jpg" alt="Gallery image 10" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--11 js--wp-4"><img src="img/gal-11.jpg" alt="Gallery image 11" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--12 js--wp-4"><img src="img/gal-12.jpg" alt="Gallery image 12" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--13 js--wp-4"><img src="img/gal-13.jpg" alt="Gallery image 13" class="gallery__img"></figure>
-            <figure class="gallery__item gallery__item--14 js--wp-4"><img src="img/gal-14.jpg" alt="Gallery image 14" class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--1 js--wp-4"><img src="img/gal-1.jpg" alt="Gallery image 1"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--2 js--wp-4"><img src="img/gal-2.jpg" alt="Gallery image 2"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--3 js--wp-4"><img src="img/gal-3.jpg" alt="Gallery image 3"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--4 js--wp-4"><img src="img/gal-4.jpg" alt="Gallery image 4"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--5 js--wp-4"><img src="img/gal-5.jpg" alt="Gallery image 5"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--6 js--wp-4"><img src="img/gal-6.jpg" alt="Gallery image 6"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--7 js--wp-4"><img src="img/gal-7.jpg" alt="Gallery image 7"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--8 js--wp-4"><img src="img/gal-8.jpg" alt="Gallery image 8"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--9 js--wp-4"><img src="img/gal-9.jpg" alt="Gallery image 9"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--10 js--wp-4"><img src="img/gal-10.jpg" alt="Gallery image 10"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--11 js--wp-4"><img src="img/gal-11.jpg" alt="Gallery image 11"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--12 js--wp-4"><img src="img/gal-12.jpg" alt="Gallery image 12"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--13 js--wp-4"><img src="img/gal-13.jpg" alt="Gallery image 13"
+                    class="gallery__img"></figure>
+            <figure class="gallery__item gallery__item--14 js--wp-4"><img src="img/gal-14.jpg" alt="Gallery image 14"
+                    class="gallery__img"></figure>
+        </div>
+
+        <div class="guides js--section-guides" id="guides">
+            <h1 class="guides__header js--wp-1">Our guieds</h1>
+            <div class="guides__list js--wp-1">
+
+                <div class="guides__item">
+                    <img src="img/guide-1.jpg" alt="Guide 1" class="guides__img">
+                    <div class="guides__details">
+                        <h4 class="heading-4">Erika Feinman</h4>
+                        <p class="guides__quote">&ldquo;Forever summer&rdquo;</p>
+                    </div>
+                </div>
+
+
+                <div class="guides__item">
+                    <img src="img/guide-2.jpg" alt="Guide 2" class="guides__img">
+                    <div class="guides__details">
+                        <h4 class="heading-4 heading-4--light">John Brown</h4>
+                        <p class="guides__quote">&ldquo;Just ski&rdquo;</p>
+                    </div>
+                </div>
+
+                <div class="guides__item">
+                    <img src="img/guide-3.jpg" alt="Guide 3" class="guides__img">
+                    <div class="guides__details">
+                        <h4 class="heading-4 heading-4--light">Julia Ramsey</h4>
+                        <p class="guides__quote">&ldquo;Need some vitamin-sea&rdquo;</p>
+                    </div>
+                </div>
+
+                <div class="guides__item">
+                    <img src="img/guide-4.jpg" alt="Guide 4" class="guides__img">
+                    <div class="guides__details">
+                        <h4 class="heading-4 heading-4--light">Kim Taylor</h4>
+                        <p class="guides__quote">&ldquo;I love travel&rdquo;</p>
+                    </div>
+                </div>
+
+                <div class="guides__item">
+                    <img src="img/guide-5.jpg" alt="Guide 5" class="guides__img">
+                    <div class="guides__details">
+                        <h4 class="heading-4 heading-4--light">Britney Smith</h4>
+                        <p class="guides__quote">&ldquo;Nature is my life&rdquo;</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="summer" id="summer">
+            <div class="summer__box js--wp-2">
+                <div class="summer__img summer__img--1"></div>
+                <h1 class="heading--1">France</h1>
+                <div class="summer-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-happy"></i>2400 happy travellers
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-airplane"></i>Travel by airplane
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-star"></i>Interesting programs
+                </div>
+            </div>
+
+            <div class="summer__box js--wp-2">
+                <div class="summer__img summer__img--2"></div>
+                <h1 class="heading--1">Hawaii</h1>
+                <div class="summer-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-happy"></i>1900 happy travellers
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-airplane"></i>Travel by airplane
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-sunny"></i>Always sunny
+                </div>
+            </div>
+
+            <div class="summer__box js--wp-2">
+                <div class="summer__img summer__img--3"></div>
+                <h1 class="heading--1">Greece</h1>
+                <div class="summer-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-happy"></i>1900 happy travellers
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-bus"></i>Travel by bus
+                </div>
+                <div class="summer-content">
+                    <i class="icon ion-md-sunny"></i>Always sunny
+                </div>
+            </div>
         </div>
 
         <div class="winter" id="winter">
             <div class="winter__box js--wp-3">
-                <div class="img--1"></div>
-                <div class="winter__text">France</div>
+                <div class="winter__img winter__img--1"></div>
+                <h1 class="heading--1">France</h1>
+                <div class="winter-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-happy"></i>1900 happy travellers
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-airplane"></i>Travel by airplane
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-snow"></i>Always fresh snow
+                </div>
             </div>
 
             <div class="winter__box js--wp-3">
-                <div class="img--2"></div>
-                <div class="winter__text">Switcherland</div>
+                <div class="winter__img winter__img--2"></div>
+                <h1 class="heading--1">Switcherland</h1>
+                <div class="winter-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-happy"></i>1900 happy travellers
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-bus"></i>Travel by bus
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-checkmark"></i>Nice ski resorts
+                </div>
             </div>
 
             <div class="winter__box js--wp-3">
-                <div class="img--3"></div>
-                <div class="winter__text">Russia</div>
+                <div class="winter__img winter__img--3"></div>
+                <h1 class="heading--1">Russia</h1>
+                <div class="winter-content">
+                    <i class="icon ion-md-card"></i> 100% money back guarantee
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-happy"></i>1900 happy travellers
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-train"></i>Travel by train
+                </div>
+                <div class="winter-content">
+                    <i class="icon ion-md-cash"></i>Good price
+                </div>
             </div>
         </div>
 
         <div class="footer" id="contact">
-            footer
+            
+            <h1 class="footer-heading">Contact we</h1>
+            
+            <form action="#" class="form">
+                
+                <div class="form__group">
+                    <input type="text" class="form__input" placeholder="Full Name" id="name" required>
+                </div>
+                <div class="form__group">
+                    <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                </div>
+
+                <div class="form__group">
+                    <textarea name="" id="message_text" rows="10" class="form__input" placeholder="Message"></textarea>
+                </div>
+                <div class="form__group">
+                    <button class="btn">
+                        Send &rarr;
+                    </button>
+                </div>
+            </form>
+
+            <div class="copyright">
+                <h2 class="copyright-header">Important &ndash; Please read these terms before booking</h1>                    
+                <p class="copyright-text-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea labore ullam repudiandae, quisquam blanditiis reprehenderit, ab ut temporibus natus voluptatem animi porro! Temporibus expedita explicabo quasi alias et amet excepturi corrupti. Laborum nemo a ipsa consequatur, expedita incidunt? Vero, molestias?</p>
+                <div class="icons">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter-square"></i>
+                </div>
+                <p class="copyright-text-2">&copy; Adam Nemeth &ndash; 2018</p>    
+                
+            </div>
+
         </div>
 
     </div>

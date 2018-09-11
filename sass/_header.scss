@@ -1,0 +1,62 @@
+.header {
+    grid-column: full-start / full-end;
+    overflow: hidden;
+    &__box {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        background-image: url("../img/top-dest-1.jpg");
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        transition: all .3s;        
+    }
+    &:hover &__box,
+    &:focus &__box {
+        transform: scale(1.2);
+    }
+    
+    h1 {        
+        margin-top: 3rem;
+        color: #ffffff;
+        font-family: sans-serif;        
+        text-align: center;
+        transition: all .2s;
+        text-transform: uppercase;   
+        align-self: end;
+        background-color: rgba( $color-secondary-2-1, .0)     
+    }
+
+
+    .btn {
+        background-color: rgba($color-secondary-2-1, 9);
+        opacity: .9;
+        color: $color-secondary-1-4;
+        border: 1px solid rgba(white, 0);
+        border-radius: 10px;        
+        font-size: 2.2rem;
+        width: minmax(200px 40%);        
+        text-decoration: none;
+        text-transform: uppercase;        
+        justify-self: center;
+        align-self: start;
+        padding: 1rem;       
+        transition: all .2s; 
+        
+        
+    }
+
+    &:hover h1 {
+        font-size: 2rem;
+        background-color: rgba( $color-secondary-2-1, .8)
+    }
+    
+    &:hover .btn {
+        background-color: rgba($color-secondary-2-1, 0);
+        color: #ffffff;
+        border: 1px solid white;
+
+    }
+
+}

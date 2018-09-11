@@ -1,4 +1,109 @@
 .footer {
-    background-color: #333;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-row: min-content;
     grid-column: 1 / -1;
+    &-heading {
+        width: 90%;
+        color: white;
+        background-color: rgba(white, .1);
+        text-align: center;
+        border-radius: 5px;
+        font-size: 3rem;
+    }
+    .form {
+        grid-column: 1 / 2;
+        display: grid;
+        justify-content: stretch;
+        padding-left: 3rem;
+        padding-bottom: 3rem;
+        &__group:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        &__input {
+            font-size: 1.5rem;
+            font-family: inherit;
+            color: black;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: rgba(white, .5);
+            border: none;
+            border-bottom: 3px solid transparent;
+            width: 90%;
+            display: block;
+        }
+        .btn {
+            background-color: rgba(white, .5);
+            opacity: .9;
+            color: black;
+            border: 1px solid rgba(white, 0);
+            border-radius: 10px;
+            font-size: 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1rem;
+            &:hover {
+                background-color: rgba($color-secondary-2-1, 0);
+                color: #ffffff;
+                border: 1px solid white;
+            }
+        }
+    }
+    .copyright {
+        background-color: rgba(black, .8);
+        font-size: 1rem;
+        color: white;
+        grid-row: 1 / 3;
+        grid-column: 2 / 3;
+        display: grid;
+        align-content: stretch;
+        justify-content: center;
+        padding: 5rem;
+
+
+        &-header {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            align-self: end;
+        }
+        &-text-1 {
+            font-size: 2rem;
+            line-height: 1;
+            text-align: justify;
+        }
+        &-text-2 {
+            font-size: 1rem;
+            justify-self: center;
+            align-self: end;
+        }
+    }
+
+    .icons {
+        font-size: 6rem;
+        text-align: center;
+        
+        i{
+            margin: 3rem;
+            transition: all .3s;            
+        }
+
+        .fa-facebook-square:hover{
+                
+            color: #3B5998;
+            
+        }
+
+        .fa-instagram:hover {
+            color: #cd486b;
+        }
+
+        .fa-twitter-square:hover {
+            color: #1dcaff;
+        }
+        
+        
+    }
+
 }
